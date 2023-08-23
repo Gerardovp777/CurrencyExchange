@@ -1,0 +1,53 @@
+Docker commmand
+docker build -t my-app-image2 "C:\Users\Usuario\Downloads\SPRING\spring-boot-webflux-example-master MOD\Technical-Challenge\target"
+docker run -p 8080:8080 my-app-image2
+
+Container:
+https://learn.microsoft.com/es-es/java/openjdk/containers
+
+***********************************************************************************************************************
+
+C:\Windows\system32>
+[+] Building 118.6s (7/7) FINISHED                                                                       docker:default
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 405B                                                                               0.0s
+ => [internal] load metadata for mcr.microsoft.com/openjdk/jdk:17-ubuntu                                           3.1s
+ => [internal] load build context                                                                                  0.1s
+ => => transferring context: 62B                                                                                   0.0s
+ => [1/2] FROM mcr.microsoft.com/openjdk/jdk:17-ubuntu@sha256:62944762b222cad1be7f0e45fcc001f7b6378c3071a33dd2c  112.3s
+ => => resolve mcr.microsoft.com/openjdk/jdk:17-ubuntu@sha256:62944762b222cad1be7f0e45fcc001f7b6378c3071a33dd2c86  0.1s
+ => => sha256:6f10125712e07104a4c92189d0c3c70aa8cc40d9557834496f52ea0762df5502 166.28MB / 166.28MB                95.6s
+ => => sha256:e7006d90a66ed2a83ce02e26995f358441a0de53b1c10edd1ec7c5488a836559 1.38kB / 1.38kB                     1.4s
+ => => sha256:62944762b222cad1be7f0e45fcc001f7b6378c3071a33dd2c860c026aaf1f956 1.61kB / 1.61kB                     0.0s
+ => => sha256:91d9418000cd664af2eb76682d774f22e1871d36ddebdc8f7a2054fbb8fc6f17 865B / 865B                         0.0s
+ => => sha256:66045ced7bee01240c0ea67595fd594e83bbea9222c7360e620909916e1abef0 3.91kB / 3.91kB                     0.0s
+ => => sha256:edaedc954fb53f42a7754a6e2d1b57f091bc9b11063bc445c2e325ea448f8f68 27.51MB / 27.51MB                   9.2s
+ => => extracting sha256:edaedc954fb53f42a7754a6e2d1b57f091bc9b11063bc445c2e325ea448f8f68                          6.4s
+ => => extracting sha256:6f10125712e07104a4c92189d0c3c70aa8cc40d9557834496f52ea0762df5502                         15.4s
+ => => extracting sha256:e7006d90a66ed2a83ce02e26995f358441a0de53b1c10edd1ec7c5488a836559                          0.0s
+ => [2/2] COPY Technical-Challenge-0.0.1-SNAPSHOT.jar /app/app.jar                                                 1.9s
+ => exporting to image                                                                                             0.4s
+ => => exporting layers                                                                                            0.4s
+ => => writing image sha256:d4f37c0efd01cbd66a40c561d1d5f1eb6a1a60d060d73d85c70312affb3e29eb                       0.0s
+ => => naming to docker.io/library/my-app-image2                                                                   0.0s
+
+What's Next?
+  View summary of image vulnerabilities and recommendations → docker scout quickview
+
+C:\Windows\system32>docker run -p 8080:8080 my-app-image2
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.2)
+
+2023-08-23T14:14:27.152Z  INFO 1 --- [           main] com.spring.webflux.ChallengeApp          : Starting ChallengeApp v0.0.1-SNAPSHOT using Java 17.0.8 with PID 1 (/app/app.jar started by root in /)
+2023-08-23T14:14:27.169Z  INFO 1 --- [           main] com.spring.webflux.ChallengeApp          : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T14:14:35.212Z  INFO 1 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2023-08-23T14:14:35.270Z  INFO 1 --- [           main] com.spring.webflux.ChallengeApp          : Started ChallengeApp in 10.366 seconds (process running for 12.945)
+
